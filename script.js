@@ -8,6 +8,7 @@ var win = window,
   body = doc.getElementsByTagName("body")[0],
   x = win.innerWidth || docElem.clientWidth || body.clientWidth;
 if (x < 768) {
+function loadi(){
   var imgs = document.getElementById("hera");
   var logo = document.querySelector(".logo");
   var row = document.querySelector(".row");
@@ -16,6 +17,9 @@ if (x < 768) {
   logo.style.bottom = "350px";
   row.style.top = "180px";
 }
+setInterval(loadi, 5)
+}
+    
 // check["pwd1"] = function () {
 //     var pwd1 = document.getElementById("pwd1"),
 //       tooltipStyle = getTooltip(pwd1).style;

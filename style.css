@@ -17,16 +17,17 @@ body {
 .row {
   display: flex;
   justify-content: space-between;
-  height: 576px;
-  padding-left: 150px;
+  height: 766px;
+  padding-left: 100px;
 }
 
 .hero {
-  height: 578px;
+  height: 768px;
+  width: 100%;
 }
 
 .logo {
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -34,8 +35,9 @@ body {
   letter-spacing: 33px;
   text-transform: uppercase;
   font-size: 50px;
-  font-weight: 600;
+  font-weight: bolder;
   margin-bottom: 20px;
+  line-height: 80px;
 }
 .text {
   color: hsl(0, 6%, 24%);
@@ -69,9 +71,7 @@ input {
   border: 2px solid hsl(0, 93%, 68%);
 }
 
-input:focus{
-  border: 1px solid hsl(0, 93%, 68%);
-}
+
 ::placeholder {
   color: hsl(0, 36%, 70%);
   font-family: cursive, sans-serif;
@@ -82,7 +82,7 @@ input:focus{
   margin-left: -60px;
   margin-top: 30px;
   position: absolute;
-  top: 441px;
+  top: 614px;
   visibility: hidden;
 }
 
@@ -101,7 +101,7 @@ button {
 -moz-box-shadow: 10px 9px 41px -1px rgba(206,151,151,0.87);
   margin-left: -35px;
   position: absolute;
-  top: 460px;
+  top: 632px;
 }
 
 button:hover {
@@ -116,7 +116,7 @@ button:hover {
   font-family: fantasy;
 }
 
-@media (max-width:1090px){
+/* @media (max-width:1090px){
   .error {
     height: 15px;
     margin-left: -60px;
@@ -132,40 +132,50 @@ button:hover {
     position: absolute;
     top: 465px;
   }
-}
+} */
 
 @media (max-width: 1024px) {
   .row {
     display: flex;
     justify-content: space-between;
-    height: 576px;
+    height: 1024px;
     padding-left: 30px;
   }
 
   .hero {
-    height: 578px;
+    height: 100%;
     width: 340px;
   }
   body {
     font-size: 15px;
   }
   .logo {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 
   .text {
-    letter-spacing: 25px;
+    letter-spacing: 33px;
     text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    line-height: 80px;
   }
+  .text {
+    color: hsl(0, 6%, 24%);
+  }
+  .text span {
+    font-weight: normal;
+    color: hsl(0, 36%, 70%);
+  }
+  
   .para {
     line-height: 25px;
     color: hsl(0, 36%, 70%);
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
+
 
   input {
     width: 250px;
@@ -176,7 +186,7 @@ button:hover {
     margin-left: -60px;
     margin-top: 30px;
     position: absolute;
-    top: 290px;
+    top: 657px;
   }
 
   button {
@@ -184,7 +194,7 @@ button:hover {
     width: 70px;
     margin-left: -35px;
     position: absolute;
-    top: 307px;
+    top: 672px;
   }
 }
 @media (max-width: 768px) {
@@ -192,37 +202,42 @@ button:hover {
     display: flex;
     flex-direction: column-reverse;
     position: relative;
-    top: 100px;
     padding-left: 0;
   }
 
   .logo {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    
+    margin-bottom: 40px;
     position: absolute;
-    bottom: 290px;
-    left: 10px;
+    bottom: 660px;
+    left: 20px;
   }
 
   .text {
     letter-spacing: 25px;
     text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    margin-top: 40px;
-    line-height: 40px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    line-height: 80px;
+    position: relative;
+    top: -200px;
+    line-height: 70px;
     
   }
   .para {
     line-height: 25px;
     color: hsl(0, 36%, 70%);
     margin-bottom: 20px;
+    position: relative;
+    top: -200px;
   }
   input {
     width: 300px;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-bottom: 50px;
+    position: relative;
+    bottom: 150px;
   }
   
   p {
@@ -233,7 +248,7 @@ button:hover {
     margin-left: -60px;
     margin-top: 30px;
     position: absolute;
-    top: 505px;
+    top: 855px;
   }
 
   button {
@@ -241,40 +256,49 @@ button:hover {
     width: 70px;
     margin-left: -35px;
     position: absolute;
-    top: 522px;
+    top: 874px;
   }
 
-  .hero {
-    height: 250px;
-    width: 480px;
-  }
 
   .hero1{
     height: 350px;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
+    position: relative;
+    top: -60px;
   }
   .diserror {
     
-    margin-top: -50px;
+    margin-top: -200px;
     margin-left: -180px;
   }
 }
 
 @media (max-width: 480px) {
   .logo {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    
+    margin-bottom: 40px;
     position: absolute;
-    bottom: 280px;
-    left: 10px;
+    bottom: 660px;
+    left: 20px;
   }
-
+  .text {
+    letter-spacing: 25px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    line-height: 80px;
+    position: relative;
+    top: -200px;
+    line-height: 70px;
+    
+  }
   .para {
     line-height: 15px;
     color: hsl(0, 36%, 70%);
     margin-bottom: 20px;
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -282,13 +306,18 @@ button:hover {
   input {
     width: 200px;
     margin-left: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    bottom: 150px;
   }
-  .error {
+  
+  
+  /* .error {
     height: 15px;
     margin-left: -60px;
     margin-top: 30px;
     position: absolute;
-    top: 505px;
+    top: 855px;
   }
 
   button {
@@ -296,8 +325,8 @@ button:hover {
     width: 70px;
     margin-left: -35px;
     position: absolute;
-    top: 522px;
-  }
+    top: 874px;
+  } */
 
   .hero {
     height: 250px;
@@ -310,60 +339,58 @@ button:hover {
 
 @media (max-width: 320px) {
   .logo {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    
+    margin-bottom: 40px;
     position: absolute;
-    bottom: 280px;
-    left: 10px;
+    bottom: 660px;
+    left: 20px;
   }
   .text {
-    letter-spacing: 15px;
+    letter-spacing: 20px;
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    margin-top: 40px;
-    line-height: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    line-height: 80px;
+    position: relative;
+    top: -250px;
+    line-height: 60px;
+    
   }
   .para {
-    line-height: 15px;
+    line-height: 20px;
     color: hsl(0, 36%, 70%);
     margin-bottom: 20px;
-    font-size: 13px;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  .error {
-    height: 15px;
-    margin-left: -60px;
-    margin-top: 30px;
-    position: absolute;
-    top: 505px;
+    position: relative;
+    top: -250px;
   }
 
   button {
     height: 38px;
-    width: 50px;
+    width: 60px;
     margin-left: -35px;
     position: absolute;
-    top: 524px;
+    top: 874px;
   }
 
-  .hero {
-    height: 250px;
-    width: 240px;
+
+  .hero1{
+    height: 350px;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+    top: -60px;
   }
   .diserror {
-    font-size: 12px;
-    margin-left: 0px;
-    margin-right: 50px;
+    
+    margin-top: -200px;
+    margin-left: -40px;
   }
   ::placeholder {
     font-size: 11px;
   }
   input {
-    width: 200px;
+    width: 150px;
     margin-left: 10px;
   }
 }
